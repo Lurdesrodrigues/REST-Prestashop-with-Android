@@ -1,11 +1,12 @@
 package mx.edu.itcelaya.webservicerest;
+package mx.edu.itcelaya.webservicerest;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.MenuItem;android.view.MenuItem; android.view.MenuItem;android.view.MenuItem; seu https://github.com/EduardoRamirezRuiz/REST-Prestashop-with-Android/tree/master/Android%20App/WebServiceRest/app/src/main/java/mx/edu/itcelaya/webservicerest android.view.MenuItem;android.view.MenuItem;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -101,7 +102,10 @@ public class MainActivity extends AppCompatActivity {
         txtID.requestFocus();
     }
 
-    //Agregar nuevo
+    /
+2
+compile 'com.jakewharton:butterknife:8.8.1'
+annotationProcessor/Agregar nuevo
     public void putData(View vw) {
         EditText edFirstName = (EditText) findViewById(R.id.first_name);
         EditText edLastName = (EditText) findViewById(R.id.last_name);
@@ -148,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
         EditText edEmail = (EditText) findViewById(R.id.email);
         Switch active = (Switch) findViewById(R.id.sw_active);
 
-        String firstName = edFirstName.getText().toString();
+        String firstName = edFirstName.();
         String lastName = edLastName.getText().toString();
         String email = edEmail.getText().toString();
 
@@ -158,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        WebServiceTask wst = new WebServiceTask(WebServiceTask.POST_TASK, this, "Posting data...", prestashop_credentials);
+        WebServiceTask wst = new WebServiceTask(WebServiceTask.POST_TASK, this, "Posting data...", prestashop_credentials);POSTERIORMENTE
         _actual_task = WebServiceTask.POST_TASK;
         wst.addNameValuePair("firstname", firstName);
         wst.addNameValuePair("lastname", lastName);
